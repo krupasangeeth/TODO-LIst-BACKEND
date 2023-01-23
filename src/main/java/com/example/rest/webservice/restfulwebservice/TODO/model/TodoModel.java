@@ -2,14 +2,22 @@ package com.example.rest.webservice.restfulwebservice.TODO.model;
 
 import java.util.Date;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
 public class TodoModel {
-    private long Id;
+
+    @Id
+    @GeneratedValue
+    private Long Id;
     private String UserName;
     private String Description;
     private Date TargetDate;
     private Boolean status;
 
-    public TodoModel(long id, String userName, String description, Date TargetDate, Boolean status) {
+    public TodoModel(Long id, String userName, String description, Date TargetDate, Boolean status) {
         Id = id;
         UserName = userName;
         Description = description;
@@ -17,10 +25,10 @@ public class TodoModel {
         this.status = status;
     }
 
-    public long getId() {
+    public Long getId() {
         return Id;
     }
-    public void setId(long id) {
+    public void setId(Long id) {
         Id = id;
     }
     public String getUserName() {

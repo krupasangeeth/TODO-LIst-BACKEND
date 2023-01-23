@@ -20,7 +20,7 @@ import com.example.rest.webservice.restfulwebservice.TODO.Service.TodoHardCodedS
 import com.example.rest.webservice.restfulwebservice.TODO.model.TodoModel;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200/")
+@CrossOrigin(origins ="http://localhost:4200/")
 public class TodoResource {
     @Autowired
     private TodoHardCodedService todoHardCodedService;

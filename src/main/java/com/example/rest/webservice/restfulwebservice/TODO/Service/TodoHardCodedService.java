@@ -11,7 +11,7 @@ import com.example.rest.webservice.restfulwebservice.TODO.model.TodoModel;
 @Service
 public class TodoHardCodedService {
     private static List<TodoModel> todos = new ArrayList<>();
-    private static int IdCounter =0; 
+    private static Long IdCounter =(long) 0; 
 
     static{
         todos.add(new TodoModel((++IdCounter),"krupa" , "Complete Atomic Habits Book", new Date(), false));
