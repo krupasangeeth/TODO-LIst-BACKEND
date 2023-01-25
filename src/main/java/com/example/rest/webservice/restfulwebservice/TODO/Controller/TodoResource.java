@@ -19,8 +19,8 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import com.example.rest.webservice.restfulwebservice.TODO.Service.TodoHardCodedService;
 import com.example.rest.webservice.restfulwebservice.TODO.model.TodoModel;
 
-@RestController
 @CrossOrigin(origins ="http://localhost:4200/")
+@RestController
 public class TodoResource {
     @Autowired
     private TodoHardCodedService todoHardCodedService;
