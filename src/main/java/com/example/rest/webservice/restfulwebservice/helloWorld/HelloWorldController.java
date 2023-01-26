@@ -17,6 +17,11 @@ public class HelloWorldController {
         return "Hello Wolrd";
     }
 
+    // @GetMapping(path = "/basicauth")
+    // public AuthenticationBean basicAuthentication(){
+    //     return new AuthenticationBean("Hello Wolrd");
+    // }
+
     @GetMapping(path = "/helloworldbean")
     public HelloWorldBean helloWorldBean(){
         throw new RuntimeException("Some Error Occured,Contact Support *******");
